@@ -2,7 +2,7 @@
 $.extend({//给类上直接扩充选项卡
     tab:function(strId){
         var $box=$(strId);
-        var aBtn=$box.children('input');
+        var aBtn=$box.children('p');
         var aDiv=$box.find('.content');
         aBtn.click(function(){
             $(this).addClass('on').siblings().removeClass('on');
@@ -19,6 +19,100 @@ $(function(){
     $languages.on('click',function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
+    //简体语言
+    $('.familiar').on('click',function () {
+        $('.cardVerification').html('金鹏卡号验证');
+        $('.cardPerson').html('会员登陆验证');
+        $('.cardNum').attr('placeholder','金鹏会员卡号');
+        $('.forgetCard').html('忘记卡号?');
+        $('.surname').attr('placeholder','您的姓氏');
+        $('.codeInput1').attr('placeholder','验证码');
+        $('.codeInput2').attr('placeholder','验证码');
+        $('.signInBtn').html('会员验证');
+        $('.signUpBtn').html('立即注册');
+        $('.bottom').html('成功注册会员即可享受积分馈赠');
+        $('.certificate').attr('placeholder','身份证/手机/邮箱/护照');
+        $('.passwordNum').attr('placeholder','密码');
+        $('.forgetPassword').html('忘记密码?');
+        $('.forgetCard').click(function () {
+            $('.mask').show();
+            $('.title').html('温馨提示');
+            $('.con').html('完成找回卡号后，请重新扫描书签二维码领取奖励。');
+            $('.btn').html('找回卡号');
+            $('.btn').on('click',function () {
+                window.location.href='aaa.html'
+            })
+        });
+        //忘记密码
+        $('.forgetPassword').click(function () {
+            $('.mask').show();
+            $('.title').html('溫馨提示');
+            $('.con').html('完成找回密码后，请重新扫描书签二维码领取奖励。');
+            $('.btn').html('找回密码');
+            $('.btn').on('click',function () {
+                window.location.href='bbb.html'
+            })
+        });
+        //注册按钮
+        $('.signUpBtn').click(function () {
+            $('.mask').show();
+            $('.title').html('溫馨提示');
+            $('.con').html('完成注册后，请重新扫描书签二维码领取奖励。');
+            $('.btn').html('立即注册');
+            $('.btn').on('click',function () {
+                window.location.href='ccc.html'
+            })
+        });
+
+    });
+
+    //繁体语言
+    $('.complex').on('click',function () {
+        $('.cardVerification').html('金鵬卡號驗證');
+        $('.cardPerson').html('會員登錄驗證');
+        $('.cardNum').attr('placeholder','金鵬會員卡號');
+        $('.forgetCard').html('忘記卡號?');
+        $('.surname').attr('placeholder','您的姓氏');
+        $('.codeInput1').attr('placeholder','驗證碼');
+        $('.codeInput2').attr('placeholder','驗證碼');
+        $('.signInBtn').html('會員驗證');
+        $('.signUpBtn').html('立即註冊');
+        $('.bottom').html('成功註冊會員即可享受積分饋贈');
+        $('.certificate').attr('placeholder','身份證/手機/郵箱/護照');
+        $('.passwordNum').attr('placeholder','密碼');
+        $('.forgetPassword').html('忘記密碼?');
+        $('.forgetCard').click(function () {
+            $('.mask').show();
+            $('.title').html('溫馨提示');
+            $('.con').html('完成找回卡號後，請重新掃描書籤二維碼領取獎勵。');
+            $('.btn').html('找回卡號');
+            $('.btn').on('click',function () {
+                window.location.href='aaa.html'
+            })
+        });
+        //忘记密码
+        $('.forgetPassword').click(function () {
+            $('.mask').show();
+            $('.title').html('溫馨提示');
+            $('.con').html('完成找回密碼后，請重新掃描書籤二維碼領取獎勵。');
+            $('.btn').html('找回密碼');
+            $('.btn').on('click',function () {
+                window.location.href='bbb.html'
+            })
+        });
+        //注册按钮
+        $('.signUpBtn').click(function () {
+            $('.mask').show();
+            $('.title').html('溫馨提示');
+            $('.con').html('完成註冊後，請重新掃描書籤二維碼領取獎勵。');
+            $('.btn').html('立即註冊');
+            $('.btn').on('click',function () {
+                window.location.href='ccc.html'
+            })
+        });
+
+    });
+
 
     // 验证码相关
 
@@ -44,7 +138,7 @@ $(function(){
 
     $('.signInBtn').on('click',function() {
         // 验证相关
-        if($('.btn.on').index() === 0) {
+        if($('.btnTab.on').index() === 0) {
             var $inputs=$('.no1>div>input');
             for(var i=0;i<$inputs.length;i++){
                 var value=$inputs.eq(i).val();
@@ -116,23 +210,35 @@ $(function(){
     $('.maskBtn').click(function () {
         $('.mask').hide();
     });
+    //忘记卡号
     $('.forgetCard').click(function () {
         $('.mask').show();
         $('.title').html('溫馨提示');
         $('.con').html('完成找回卡號後，請重新掃描書籤二維碼領取獎勵。');
-        $('.btn').html('找回卡號')
+        $('.btn').html('找回卡號');
+        $('.btn').on('click',function () {
+            window.location.href='aaa.html'
+        })
     });
+    //忘记密码
     $('.forgetPassword').click(function () {
         $('.mask').show();
         $('.title').html('溫馨提示');
         $('.con').html('完成找回密碼后，請重新掃描書籤二維碼領取獎勵。');
-        $('.btn').html('找回密碼')
+        $('.btn').html('找回密碼');
+        $('.btn').on('click',function () {
+            window.location.href='bbb.html'
+        })
     });
+    //注册按钮
     $('.signUpBtn').click(function () {
         $('.mask').show();
         $('.title').html('溫馨提示');
         $('.con').html('完成註冊後，請重新掃描書籤二維碼領取獎勵。');
-        $('.btn').html('立即註冊')
+        $('.btn').html('立即註冊');
+        $('.btn').on('click',function () {
+            window.location.href='ccc.html'
+        })
     });
 
 

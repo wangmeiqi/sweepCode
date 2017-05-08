@@ -4,11 +4,28 @@ $(function(){
     $languages.on('click',function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
+    //简体语言
+    $('.familiar').on('click',function () {
+        $('.top').html('您已成功通过会员验证，快来领取666积分吧！');
+        $('.integralNum').attr('placeholder','请输入书签上的领取码');
+        $('.getCodeBtn').html('领取666积分');
+        $('.bottom').html('每个会员仅可领取一次 <br/> 2018年5月31日前扫码领取有效');
+
+    });
+
+    //繁体语言
+    $('.complex').on('click',function () {
+        $('.top').html('您已成功通過會員驗證，快來領取666積分吧！');
+        $('.integralNum').attr('placeholder','請輸入書籤上的領取碼');
+        $('.getCodeBtn').html('領取666積分');
+        $('.bottom').html('每個會員僅可領取一次 <br/> 2018年5月31日前掃碼領取有效');
+
+    });
 
     //发送请求校验
     $('.getCodeBtn').on('click',function () {
         if($('.integralNum').val()==''){
-            alert('請輸入領取碼')
+            alert($('.integralNum').attr('placeholder'));
         }else {
             var ajaxData={};
             ajaxData.verCode=$('integralNum').val();

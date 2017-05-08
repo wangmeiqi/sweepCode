@@ -94,7 +94,7 @@ body{
     width:100%;
     background:url(../img/bg.jpg) no-repeat top  center;
     background-size:100% auto;
-    overflow:hidden;
+    overflow:auto;
 }
 
 .language{
@@ -132,7 +132,7 @@ body{
 .tab{
     clear: both;
 }
-.tab .btn{
+.tab .btnTab{
     float: left;
     width: 50%;
     text-align: center;
@@ -142,7 +142,7 @@ body{
     color: #454e55;
     border-bottom: 1px solid #515a61;
 }
-.tab input.on{
+.tab p.on{
     height: .5rem;
     color: #e0514c;
     border-bottom: 2px solid #e0514c;
@@ -175,7 +175,7 @@ body{
     float: left;
     width: .35rem;
     height: .23rem;
-    margin: .43rem .24rem 0 0;
+    margin: .43rem .21rem 0 0;
     background: url("../img/Aa.png") no-repeat;
     background-size: cover;
 }
@@ -228,7 +228,7 @@ body{
     float: left;
     width: .28rem;
     height: .32rem;
-    margin: .43rem .24rem 0 0;
+    margin: .43rem .28rem 0 0;
     background: url("../img/code.png") no-repeat;
     background-size: cover;
 }
