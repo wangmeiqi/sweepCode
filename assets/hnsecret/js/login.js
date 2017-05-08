@@ -23,7 +23,6 @@ $(function(){
     // 验证码相关
 
     var $code1 = $('#code1');
-
     var w = Math.ceil($code1.width() + 2);
     var h = Math.ceil($code1.height() + 2);
 
@@ -56,17 +55,17 @@ $(function(){
             }
             // 第一种
             if(verifyCode1.validate($('.codeInput1').val())) {
-                var data={};
-                data.cardid=$('.cardNum').val();
-                data.lastname=$('.surname').val();
+                var ajaxData={};
+                ajaxData.cardid=$('.cardNum').val();
+                ajaxData.lastname=$('.surname').val();
                 $.ajax({
                     url:'aaa',
                     type:'post',
-                    data:data,
-                    success:function () {
-                        if(tabNum==0){//tabNum==0代表信息校验成功
+                    data:ajaxData,
+                    success:function (data) {
+                        if(data.tabNum==0){//tabNum==0代表信息校验成功
                             window.location.href='./getIntegral.html'
-                        }else if(tabNum==1){//tabNum==1代表输入的卡號和姓氏匹配不上
+                        }else if(data.tabNum==1){//tabNum==1代表输入的卡號和姓氏匹配不上
                             $('.mask').show();
                             $('.title').html('驗證失敗');
                             $('.con').html('您輸入的卡號或姓氏有誤，請核對後重新輸入。');
@@ -88,17 +87,17 @@ $(function(){
                 }
             }
             if(verifyCode2.validate($('.codeInput2').val())) {
-                var data={};
-                data.cardid=$('.cardNum').val();
-                data.pwd=$('.passwordNum').val();
+                var ajaxData={};
+                ajaxData.cardid=$('.cardNum').val();
+                ajaxData.pwd=$('.passwordNum').val();
                 $.ajax({
                     url:'aaa',
                     type:'post',
-                    data:data,
-                    success:function () {
-                        if(tabNum==0){//tabNum==0代表信息校验成功
+                    data:ajaxData,
+                    success:function (data) {
+                        if(data.tabNum==0){//tabNum==0代表信息校验成功
                             window.location.href='./getIntegral.html'
-                        }else if(tabNum==2){//tabNum==2代表输入的用户名和密码匹配不上
+                        }else if(data.tabNum==2){//tabNum==2代表输入的用户名和密码匹配不上
                             $('.mask').show();
                             $('.title').html('驗證失敗');
                             $('.con').html('您輸入的用戶名或密碼有誤，請核對後重新輸入。');
