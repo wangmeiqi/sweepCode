@@ -63,7 +63,6 @@ $(function(){
                     type:'post',
                     data:ajaxData,
                     success:function (data) {
-                        fakeAjax()
                         if(data.tabNum==0){//tabNum==0代表信息校验成功
                             window.location.href='./getIntegral.html'
                         }else if(data.tabNum==1){//tabNum==1代表输入的卡號和姓氏匹配不上
