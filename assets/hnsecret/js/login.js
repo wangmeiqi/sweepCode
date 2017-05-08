@@ -14,6 +14,7 @@ $.extend({//给类上直接扩充选项卡
 $(function(){
     //选项卡
     $.tab('#tab');
+
     //切换语言版本
     var languageFlag = 0;//0代表中文繁體
     var $languages=$('.language>a');
@@ -37,7 +38,6 @@ $(function(){
         $('.passwordNum').attr('placeholder','密码');
         $('.forgetPassword').html('忘记密码?');
 
-
     });
 
     //繁体语言
@@ -56,7 +56,6 @@ $(function(){
         $('.certificate').attr('placeholder','身份證/手機/郵箱/護照');
         $('.passwordNum').attr('placeholder','密碼');
         $('.forgetPassword').html('忘記密碼?');
-
     });
 
     //英语

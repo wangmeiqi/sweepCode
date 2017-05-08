@@ -10,7 +10,7 @@ $(function () {
 
 
     //切换语言版本
-    var languageFlag = 0;//0代表中文繁體
+    var languageFlag = 0;//0代表中文繁體 1代表中文简体
     var $languages = $('.language>a');
     $languages.on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
@@ -51,8 +51,6 @@ $(function () {
         $('.getCodeBtn').html('領取666積分');
         $('.bottom').html('每個會員僅可領取一次 <br/> 2018年5月31日前掃碼領取有效');
     });
-    var data = {};
-    data.codeNum = 0;
     //发送请求校验
     $('.getCodeBtn').on('click', function () {
         if ($('.integralNum').val() == '') {
