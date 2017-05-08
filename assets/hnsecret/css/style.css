@@ -1,0 +1,374 @@
+/* CSS Document */
+body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100px;
+}
+body {
+    color: #000;
+    font-family: "微软雅黑", "Arial Black", Gadget, sans-serif;
+}
+a:link {
+    color: #000;
+    text-decoration: none;
+    outline: none;
+}
+
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    -webkit-border-radius: 0px;
+    -webkit-appearance: none;
+}
+
+input, select {
+    vertical-align: middle
+}
+
+input:focus {
+    outline: none
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+i{
+    font-style: normal;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    float: left;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    blr: expression(this.onFocus=this.blur());
+}
+
+.clear {
+    clear: both;
+}
+body{
+    width:100%;
+    background:url(../img/bg.jpg) no-repeat top  center;
+    background-size:100% auto;
+    overflow:hidden;
+}
+
+.language{
+    width: 100%;
+    height: .59rem;
+    line-height: .59rem;
+    background:rgba(0,0,0,.2) ;
+}
+.language a{
+    float: right;
+    color: #fff;
+    font-size: .26rem;
+}
+.language a.one:after{
+    content: '';
+    display: inline-block;
+    height: .28rem;
+    width: .02rem;
+    background: #fff;
+    margin: 0 .1rem;
+    vertical-align: -.05rem;
+}
+.language a:nth-child(1){
+    margin-right: .28rem;
+}
+.language a.active{
+    text-decoration: underline;
+}
+.banner{
+    width: 100%;
+    height: 4rem;
+    background: #fff;
+    background: rgba(255,255,255,0);
+}
+.tab{
+    clear: both;
+}
+.tab .btn{
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: .51rem;
+    background: rgba(255,255,255,0);
+    font-size: .26rem;
+    color: #454e55;
+    border-bottom: 1px solid #515a61;
+}
+.tab input.on{
+    height: .5rem;
+    color: #e0514c;
+    border-bottom: 2px solid #e0514c;
+}
+.tab div.content{
+    display: none;
+}
+.tab div.show{
+    display: block;
+}
+.tab .sign{
+    width: 75%;
+    height: 1.14rem;
+    /*line-height: .5rem;*/
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+.tab .sign span.card{
+    float: left;
+    width: .32rem;
+    height: .25rem;
+    margin: .65rem .24rem 0 0;
+    background: url("../img/card.png") no-repeat;
+    background-size: cover;
+}
+.tab .sign i{
+    margin-top:.64rem;
+}
+.tab .sign span.Aa{
+    float: left;
+    width: .35rem;
+    height: .23rem;
+    margin: .43rem .24rem 0 0;
+    background: url("../img/Aa.png") no-repeat;
+    background-size: cover;
+}
+.sign input{
+    float: left;
+    width: 64%;
+    margin-top: .57rem;
+    font-size: .26rem;
+}
+.sign i{
+    float: right;
+    color: #e0514c;
+    font-size: .22rem;
+}
+.tab .name{
+    width: 75%;
+    height: .9rem;
+    line-height: .5rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+.tab .name input{
+    margin-top: .35rem;
+}
+.tab .password{
+    width: 75%;
+    height: .9rem;
+    line-height: .5rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+.tab .password input{
+    margin-top: .35rem;
+}
+.tab .password i{
+    margin-top: .32rem;
+}
+
+.tab .code{
+    width: 75%;
+    height: .9rem;
+    line-height: .5rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+.tab .code input{
+    margin-top: .38rem;
+}
+.tab .code .codeBg{
+    float: left;
+    width: .28rem;
+    height: .32rem;
+    margin: .43rem .24rem 0 0;
+    background: url("../img/code.png") no-repeat;
+    background-size: cover;
+}
+.tab .code .codeNum{
+    display: inline-block;
+    width: .99rem;
+    height: .37rem;
+}
+.tab .code .codeNum{
+    margin-top: .1rem;
+}
+
+.signInBtn{
+    height: .65rem;
+    line-height: .65rem;
+    width: 75%;
+    margin: .5rem auto 0;
+    background: #e0514c;
+    border-radius: .27rem;
+    color: #fff;
+    font-size: .29rem;
+    text-align: center;
+}
+.signUpBtn{
+    height: .65rem;
+    line-height: .65rem;
+    width: 75%;
+    margin: .23rem auto 0;
+    border: 1px solid #e0514c;
+    border-radius: .27rem;
+    color: #e0514c;
+    font-size: .29rem;
+    text-align: center;
+}
+.bottom{
+    width: 75%;
+    text-align: center;
+    font-size: .24rem;
+    margin:.34rem auto 0;
+    color: #454d52;
+}
+
+/*弹框提示*/
+.mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    position: fixed;
+    left: 0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+.mask .toast{
+    width: 4.85rem;
+    height: 2.7rem;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.mask .toast .title{
+    font-size: .3rem;
+    color: #e0514c;
+    padding-top: .34rem;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.mask .toast .con{
+    width: 90%;
+    margin: .26rem auto 0;
+    font-size: .22rem;
+    color: #676767;
+}
+.mask .toast .btn{
+    position: absolute;
+    left: .95rem;
+    bottom: .28rem;
+    width: 2.99rem;
+    height: .56rem;
+    font-size: .3rem;
+    color: #fff;
+    background: #e0514c;
+    margin: 0 auto;
+    border-radius: .2rem;
+    text-align: center;
+    line-height: .56rem;
+}
+
+.mask .toast em{
+    position: absolute;
+    top: .11rem;
+    right: .13rem;
+    width: .33rem;
+    height: .33rem;
+    background: url("../img/concle.png") no-repeat ;
+    background-size: cover;
+}
+
+/*getIntegral*/
+.top{
+    width: 60%;
+    font-size: .33rem;
+    color: #e0514c;
+    margin: .55rem  auto 0;
+    text-align: center;
+}
+.getCode{
+    width: 75%;
+    height: 1.14rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+.getCode .lock{
+    float: left;
+    width: .32rem;
+    height: .25rem;
+    margin: .65rem .24rem 0 0;
+    background: url("../img/card.png") no-repeat;
+    background-size: cover;
+}
+.getCode input{
+    float: left;
+    width: 66%;
+    margin-top: .57rem;
+    font-size: .26rem;
+}
+.getCodeBtn{
+    height: .65rem;
+    line-height: .65rem;
+    width: 75%;
+    margin: .5rem auto 0;
+    background: #e0514c;
+    border-radius: .27rem;
+    color: #fff;
+    font-size: .29rem;
+    text-align: center;
+}

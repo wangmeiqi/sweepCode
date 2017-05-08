@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>登录</title>
+    <link rel="stylesheet" href="../../assets/hnsecret/css/style.css"/>
+    <script>
+        ~function () {
+            var desW = 640;
+            var winW = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+        }();
+    </script>
+</head>
+<body style=" width:100%; background:url(../../assets/hnsecret/img/bg.jpg) no-repeat top  center; background-size:100% auto; overflow:hidden;">
+<div>
+    <div class="language">
+        <a href="javascript:;">English</a>
+        <a href="javascript:;" class="one active">中文繁體</a>
+        <a href="javascript:;" class="one">中文简体</a>
+    </div>
+    <div class="banner"></div>
+    <div class="tab" id="tab">
+        <input type="text" value="金鵬卡號驗證" class=" btn on" readonly>
+        <input type="text" value="會員登錄驗證"class=" btn " readonly>
+        <div style="clear: both"></div>
+        <div class="show content no1">
+            <div class="sign">
+                <span class="card"></span>
+                <input class="cardNum" type="text" placeholder="金鵬會員卡號">
+                <i class="forgetCard">忘記卡號?</i>
+            </div>
+            <div class="sign name">
+                <span class="Aa"></span>
+                <input  class="surname" type="text" placeholder="您的姓氏">
+            </div>
+            <div class="sign code">
+                <span class="codeBg"></span>
+                <input type="text" placeholder="驗證碼" class="codeInput1">
+                <div class="codeNum" id="code1"></div>
+            </div>
+        </div>
+        <div class="content no2">
+            <div class="sign">
+                <span class="card"></span>
+                <input type="text" placeholder="身份證/手機/郵箱/護照">
+            </div>
+            <div class="sign password">
+                <span class="Aa"></span>
+                <input class="passwordNum" type="text" placeholder="密碼">
+                <i class="forgetPassword">忘記密碼?</i>
+            </div>
+            <div class="sign code">
+                <span class="codeBg"></span>
+                <input type="text" placeholder="驗證碼" class="codeInput2">
+                <div class="codeNum" id="code2"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="signInBtn">會員驗證</div>
+    <div class="signUpBtn">立即註冊</div>
+    <p class="bottom">成功註冊會員即可享受積分饋贈</p>
+</div>
+
+<!--弹框-->
+<div class="mask">
+    <div class="toast">
+        <p class="title">領取失敗</p>
+        <div class="con">您已成功領取666金鵬積分，積分將在24小時內到賬，請登錄ffp.hnair.com查詢。
+        </div>
+        <div class="btn" >知道了</div>
+        <em class="maskBtn"></em>
+    </div>
+</div>
+
+<script src="../../assets/hnsecret/js/jquery-2.1.1.min.js"></script>
+<script src="../../assets/hnsecret/js/gVerify.js"></script>
+<script src="../../assets/hnsecret/js/login.js"></script>
+
+</body>
+</html>
