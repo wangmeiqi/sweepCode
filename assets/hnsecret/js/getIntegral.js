@@ -1,6 +1,12 @@
 $(function(){
+    //切换语言版本
+    var $languages=$('.language>a');
+    $languages.on('click',function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    //发送请求校验
     $('.getCodeBtn').on('click',function () {
-        console.log(1);
         if($('.integralNum').val()==''){
             alert('請輸入領取碼')
         }else {
