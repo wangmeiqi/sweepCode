@@ -383,3 +383,14 @@ body{
     font-size: .29rem;
     text-align: center;
 }
+.getCodeBtn.active{
+    height: .65rem;
+    line-height: .65rem;
+    width: 75%;
+    margin: .5rem auto 0;
+    background: #ccc;
+    border-radius: .27rem;
+    color: #fff;
+    font-size: .29rem;
+    text-align: center;
+}

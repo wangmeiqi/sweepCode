@@ -177,12 +177,18 @@ $(function () {
 									$('.mask').show();
 									$('.title').html('驗證失敗');
 									$('.con').html('您輸入的卡號或姓氏有誤，請核對後重新輸入。');
-									$('.btn').html('知道了')
+									$('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
 								} else if (languageFlag == 1) {
 									$('.mask').show();
 									$('.title').html('验证失败');
-									$('.con').html('您输入的考好或姓氏有误，请核对后重新输入。');
-									$('.btn').html('知道了')
+									$('.con').html('您输入的卡号或姓氏有误，请核对后重新输入。');
+									$('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
 								}
 							}
 						},
@@ -219,10 +225,24 @@ $(function () {
 							if (data.tabNum == 0) {//tabNum==0代表信息校验成功
 								window.location.href = './getIntegral.html'
 							} else if (data.tabNum == 2) {//tabNum==2代表输入的用户名和密码匹配不上
-								$('.mask').show();
-								$('.title').html('驗證失敗');
-								$('.con').html('您輸入的用戶名或密碼有誤，請核對後重新輸入。');
-								$('.btn').html('知道了')
+								if(languageFlag==0){
+                                    $('.mask').show();
+                                    $('.title').html('驗證失敗');
+                                    $('.con').html('您輸入的用戶名或密碼有誤，請核對後重新輸入。');
+                                    $('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
+								}else if(languageFlag==1){
+                                    $('.mask').show();
+                                    $('.title').html('验证失败');
+                                    $('.con').html('您输入的用户名或密码有误，请核对后重新输入。');
+                                    $('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
+								}
+
 							}
 						},
 					});
@@ -239,6 +259,7 @@ $(function () {
 	$('.maskBtn').click(function () {
 		$('.mask').hide();
 	});
+
 	//忘记卡号
 	$('.forgetCard').click(function () {
 		if (languageFlag == 0) {
