@@ -171,7 +171,12 @@ $(function () {
 						success: function (data) {
 							flag = false;
 							if (data.tabNum == 0) {//tabNum==0代表信息校验成功
-								window.location.href = './getIntegral.html'
+								if(languageFlag==0){
+                                    window.location.href = './getIntegral.html'
+								}else if(languageFlag==1){
+                                    window.location.href = './getIntegralJ.html'
+								}
+
 							} else if (data.tabNum == 1) {//tabNum==1代表输入的卡號和姓氏匹配不上
 								if (languageFlag == 0) {
 									$('.mask').show();
