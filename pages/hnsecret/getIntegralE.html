@@ -25,16 +25,16 @@
     <div class="top topE">Membership verification was successful! Get your 666 points now!</div>
     <div class="getCode">
         <span class="lock"></span>
-        <input class="integralNum" type="text" placeholder="请输入卡片上的领取码"/>
+        <input class="integralNum integralNumE" type="text" placeholder="Please enter the points code on your bookmark"/>
     </div>
-    <div class="getCodeBtn">领取666积分</div>
-    <p class="bottom">每个会员仅可领取一次 <br/> 2018年5月31日前扫码领取有效</p>
+    <div class="getCodeBtn getCodeBtnE">Get 666 points</div>
+    <p class="bottom bottomE">Can only be collected once per member  <br/>  Get your 666 points before May 31, 2018</p>
 
     <!--弹框-->
     <div class="mask maskE">
         <div class="toast">
-            <p class="title">领取失败</p>
-            <div class="con">您已成功领取666金鹏积分，积分将在24小时内到账，请登陆ffp.hnair.com查询。
+            <p class="title">Failed to Collect</p>
+            <div class="con">The reward points code you entered is incorrect, please check and enter it again
             </div>
             <div class="btn" >知道了</div>
             <em class="maskBtn"></em>
@@ -47,30 +47,30 @@
     var lanType = 'english'; // 当前页面的语言
     // 当前页面提示的信息
     var alertMessage = {
-    	'0' : {
-		    titleText: '领取成功',
-		    contentText: '您已成功领取666金鹏积分，积分将在24小时内到账，请登陆ffp.hnair.com查询。',
-		    btnText: '知道了'
+        '0' : {
+		    titleText: 'Collected Successfully',
+		    contentText: 'You have successfully collected 666 Fortune Wings points, they will be added to your account within the next 24 hours. Please go to ffp.hnair.com to check',
+		    btnText: 'Got it'
       },
       '1': {
-	      titleText: '领取失败',
-	      contentText: '此积分领取码已被使用，如有疑问请拨打86-898-950717咨询。',
-	      btnText: '知道了'
+	      titleText: 'Failed to Collect',
+	      contentText: 'This reward points code has already been used, Please call 86-898-950717 with any questions or concerns',
+	      btnText: 'Got it'
       },
       '2': {
-	      titleText: '领取失败',
-	      contentText: '您输入的领取码有误，请核对后重新输入。',
-	      btnText: '知道了'
+	      titleText: 'Failed to Collect',
+	      contentText: ' The reward points code you entered is incorrect, please check and enter it again',
+	      btnText: 'Got it'
       },
       '3': {
-	      titleText: '领取失败',
-	      contentText: '此会员已参加过活动，每位会员仅可领取一次，如有疑问请拨打86-898-950717咨询。',
-	      btnText: '知道了'
+	      titleText: 'Failed to Collect',
+	      contentText: 'This member has already participated in this activity. Each member may only participate once. Please call 86-898-950717 with any questions or concerns.',
+	      btnText: 'Got it'
       },
         '4':{
-            titleText: '验证失败',
-            contentText: '系统异常，请重新验证',
-            btnText: '知道了'
+            titleText: 'Validation fails',
+            contentText: 'A system exception, please verify again',
+            btnText: 'Got it'
         }
     };
 </script>

@@ -1,6 +1,9 @@
 $(function () {
+
+    $('.mask').show();
+
     //弹窗
-    $('.mask').hide();
+    //$('.mask').hide();
     $('.maskBtn').click(function () {
         $('.mask').hide();
     });

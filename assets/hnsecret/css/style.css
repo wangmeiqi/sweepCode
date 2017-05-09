@@ -398,7 +398,20 @@ body{
 /*英文版本样式*/
 .top.topE{
     width: 72%;
-    font-size: .2rem;
-
+    font-size: .33rem;
+}
+.getCode input.integralNumE{
+    font-size: .09rem;
+    width: 86%;
+    margin-top: .63rem;
+}
+.getCodeBtn.getCodeBtnE{
+    font-size: .27rem;
+}
+.bottom.bottomE{
+    font-size: .21rem;
+}
+.mask.maskE .toast{
+    height: 3.7rem;
 }
 
