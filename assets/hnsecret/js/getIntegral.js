@@ -9,7 +9,7 @@ $(function () {
     });
 
 
-    //切换语言版本
+ /*   //切换语言版本
     var languageFlag = 0;//0代表中文繁體 1代表中文简体
     var $languages = $('.language>a');
     $languages.on('click', function () {
@@ -33,7 +33,7 @@ $(function () {
         $('.integralNum').attr('placeholder', '請輸入書籤上的領取碼');
         $('.getCodeBtn').html('領取666積分');
         $('.bottom').html('每個會員僅可領取一次 <br/> 2018年5月31日前掃碼領取有效');
-    });
+    });*/
 
     //按钮请求
     var flag = false;
@@ -48,7 +48,7 @@ $(function () {
         } else {
             //请求完毕
             if ($btn.hasClass('active')) {
-                $btn.addClass('active');
+                $btn.removeClass('active');
             }
         }
     };
@@ -113,5 +113,4 @@ $(function () {
             }
         }
     })
-
 });

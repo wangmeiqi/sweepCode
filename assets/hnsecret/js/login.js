@@ -36,7 +36,6 @@ $(function () {
 		$('.passwordNum').attr('placeholder', '密码');
 		$('.forgetPassword').html('忘记密码?');
 
-
 	});
 
 	//繁体语言
@@ -57,54 +56,6 @@ $(function () {
 		$('.forgetPassword').html('忘記密碼?');
 
 	});
-
-	//英语
-	/*$('.english').on('click',function () {
-	 $('.cardVerification').html('Fortune Wings number');
-	 $('.cardPerson').html('Others');
-	 $('.cardNum').attr('placeholder','Fortune Wings number');
-	 $('.forgetCard').html(' ');
-	 $('.surname').attr('placeholder','Your last name');
-	 $('.codeInput1').attr('placeholder','Verification Code');
-	 $('.codeInput2').attr('placeholder','Verification Code');
-	 $('.signInBtn').html('Verification');
-	 $('.signUpBtn').html('Register ');
-	 $('.bottom').html('ou can collect your reward after registration');
-	 $('.certificate').attr('placeholder','身份證/手機/郵箱/護照');
-	 $('.passwordNum').attr('placeholder','密碼');
-	 $('.forgetPassword').html('忘記密碼?');
-	 $('.forgetCard').click(function () {
-	 $('.mask').show();
-	 $('.title').html('溫馨提示');
-	 $('.con').html('完成找回卡號後，請重新掃描書籤二維碼領取獎勵。');
-	 $('.btn').html('找回卡號');
-	 $('.btn').on('click',function () {
-	 window.location.href='aaa.html'
-	 })
-	 });
-	 //忘记密码
-	 $('.forgetPassword').click(function () {
-	 $('.mask').show();
-	 $('.title').html('溫馨提示');
-	 $('.con').html('完成找回密碼后，請重新掃描書籤二維碼領取獎勵。');
-	 $('.btn').html('找回密碼');
-	 $('.btn').on('click',function () {
-	 window.location.href='bbb.html'
-	 })
-	 });
-	 //注册按钮
-	 $('.signUpBtn').click(function () {
-	 $('.mask').show();
-	 $('.title').html('溫馨提示');
-	 $('.con').html('完成註冊後，請重新掃描書籤二維碼領取獎勵。');
-	 $('.btn').html('立即註冊');
-	 $('.btn').on('click',function () {
-	 window.location.href='ccc.html'
-	 })
-	 });
-
-	 });*/
-
 
 	// 验证码相关
 	var $code1 = $('#code1');
@@ -140,7 +91,7 @@ $(function () {
 		} else {
 			//请求完毕
 			if ($btn.hasClass('active')) {
-				$btn.addClass('active');
+				$btn.removeClass('active');
 			}
 		}
 	};
@@ -217,7 +168,6 @@ $(function () {
 						},
 					});
 				}
-
 
 			} else {
 				alert('验证码错误')
