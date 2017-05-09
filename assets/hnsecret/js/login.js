@@ -22,6 +22,7 @@ $(function () {
     //简体语言
     $('.familiar').on('click', function () {
         languageFlag = 1;//0代表中文繁體 1代表中文简体
+        $('.content,.signInBtn,.signUpBtn').removeClass('english');
         $(document.body).css('background', 'url(../../assets/hnsecret/img/bgj.jpg) no-repeat top  center');
         $(document.body).css('background-size', '100% auto');
         $(document.body).css('width', '100%');
@@ -46,6 +47,7 @@ $(function () {
     $('.complex').on('click', function () {
         languageFlag = 0;
         $('.mask').removeClass('maskE');
+	    $('.content,.signInBtn,.signUpBtn').moveClass('english');
         $(document.body).css('background', 'url(../../assets/hnsecret/img/bg.jpg) no-repeat top  center');
         $(document.body).css('background-size', '100% auto');
         $('.cardVerification').html('金鵬卡號驗證');
@@ -68,6 +70,7 @@ $(function () {
     $('.english').on('click', function () {
         languageFlag = 2;
         $('.mask').addClass('maskE');
+	    $('.content,.signInBtn,.signUpBtn').addClass('english');
         $(document.body).css('background', 'url(../../assets/hnsecret/img/bge.jpg) no-repeat top  center');
         $(document.body).css('background-size', '100% auto');
         $('.cardVerification').html('Card No.');

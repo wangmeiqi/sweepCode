@@ -185,6 +185,24 @@ body{
     margin-top: .57rem;
     font-size: .26rem;
 }
+
+/* 英语控制 */
+.english .sign input {
+    font-size: .09rem;
+    margin-top: .62rem;
+}
+.english .sign i {
+    font-size: .09rem;
+}
+.tab .english .name input {
+    margin-top: .39rem;
+}
+.tab .english .code input{
+    margin-top: .41rem;
+}
+.tab  .english .password input {
+    margin-top: .39rem;
+}
 .sign i{
     float: right;
     color: #e0514c;
@@ -228,7 +246,7 @@ body{
     float: left;
     width: .28rem;
     height: .32rem;
-    margin: .43rem .28rem 0 0;
+    margin: .4rem .28rem 0 0;
     background: url("../img/code.png") no-repeat;
     background-size: cover;
 }
@@ -252,16 +270,12 @@ body{
     font-size: .29rem;
     text-align: center;
 }
-.signInBtn.active{
-    height: .65rem;
-    line-height: .65rem;
-    width: 75%;
-    margin: .5rem auto 0;
+.signInBtn.english{
+    font-size: .27rem;
+}
+
+.signInBtn.active {
     background: #ccc;
-    border-radius: .27rem;
-    color: #fff;
-    font-size: .29rem;
-    text-align: center;
 }
 .signUpBtn{
     height: .65rem;
@@ -273,6 +287,9 @@ body{
     color: #e0514c;
     font-size: .29rem;
     text-align: center;
+}
+.signUpBtn.english{
+    font-size: .27rem;
 }
 .bottom{
     width: 75%;
