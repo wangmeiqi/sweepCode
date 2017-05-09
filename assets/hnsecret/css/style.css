@@ -349,7 +349,7 @@ body{
     width: 60%;
     font-size: .33rem;
     color: #e0514c;
-    margin: .55rem  auto 0;
+    margin: 1rem auto 0;
     text-align: center;
 }
 .getCode{
@@ -394,3 +394,11 @@ body{
     font-size: .29rem;
     text-align: center;
 }
+
+/*英文版本样式*/
+.top.topE{
+    width: 72%;
+    font-size: .2rem;
+
+}
+

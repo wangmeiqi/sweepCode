@@ -108,6 +108,7 @@ $(function () {
                         } else {
                             //codeNum 出现其他情况
                         }
+                        $('.integralNum').val('');
                     }
                 });
             }
