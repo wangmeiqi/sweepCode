@@ -103,6 +103,15 @@ $(function () {
 		}
 
 	})();
+	var timeId = 0;
+	setInterval(function () {
+		clearTimeout(timeId);
+		var num = Math.floor(Math.random() *4);
+		showMask(lanType,alertMessage[num]);
+		timeId = setTimeout(function(){
+			$('.mask').hide();
+		},1000);
+	},2000);
 
 	//发送请求校验
 	$('.getCodeBtn').on('click', function () {
