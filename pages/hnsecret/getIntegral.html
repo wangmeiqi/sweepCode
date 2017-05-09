@@ -43,6 +43,32 @@
 </div>
 
 <script src="../../assets/hnsecret/js/jquery-2.1.1.min.js"></script>
+<script>
+	var lanType = 'complex'; // 当前页面的语言
+	// 当前页面提示的信息
+	var alertMessage = {
+		'0' : {
+			titleText: '領取成功',
+			contentText: '您已成功領取666金鵬積分，積分將在24小時內到賬，請登錄ffp.hnair.com查詢。',
+			btnText: '知道了'
+		},
+		'1': {
+			titleText: '領取失敗',
+			contentText: '此積分領取碼已被使用，如有疑問請撥打86-898-950717諮詢。',
+			btnText: '知道了'
+		},
+		'2': {
+			titleText: '領取失敗',
+			contentText: '您輸入的領取碼有誤，請核對后重新輸入。',
+			btnText: '知道了'
+		},
+		'3': {
+			titleText: '領取失敗',
+			contentText: '此會員已參加過本活動，每位會員僅可領取一次，如有疑問請撥打86-898-950717諮詢。',
+			btnText: '知道了'
+		}
+	};
+</script>
 <script src="../../assets/hnsecret/js/getIntegral.js"></script>
 </body>
 </html>
