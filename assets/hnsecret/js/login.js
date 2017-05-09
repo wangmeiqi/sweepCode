@@ -157,7 +157,6 @@ $(function () {
 			}
 			// 第一种
 			if (verifyCode1.validate($('.codeInput1').val())) {
-				//flag=true;
 				var ajaxData = {};
 				ajaxData.cardid = $('.cardNum').val();
 				ajaxData.lastname = $('.surname').val();
@@ -165,9 +164,10 @@ $(function () {
 					flag = true;
 					changeBtnStyle();
 					$.ajax({
-						url: 'aaa',
+						url: 'register',
 						type: 'post',
 						data: ajaxData,
+						dataType:'json',
 						success: function (data) {
 							flag = false;
 							if (data.tabNum == 0) {//tabNum==0代表信息校验成功
@@ -195,6 +195,24 @@ $(function () {
                                         $('.mask').hide();
                                     });
 								}
+							}else if(data.tabNum==3){
+                                if (languageFlag == 0) {
+                                    $('.mask').show();
+                                    $('.title').html('驗證失敗');
+                                    $('.con').html('系統異常，請重新登錄');
+                                    $('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
+                                } else if (languageFlag == 1) {
+                                    $('.mask').show();
+                                    $('.title').html('验证失败');
+                                    $('.con').html('系统异常，请重新登陆');
+                                    $('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
+                                }
 							}
 						},
 					});
@@ -222,9 +240,10 @@ $(function () {
 					flag = true;
 					changeBtnStyle();
 					$.ajax({
-						url: 'aaa',
+						url: 'login',
 						type: 'post',
 						data: ajaxData,
+                        dataType:'json',
 						success: function (data) {
 							flag = false;
 							if (data.tabNum == 0) {//tabNum==0代表信息校验成功
@@ -248,8 +267,26 @@ $(function () {
                                     });
 								}
 
-							}
-						},
+							}else if(data.tabNum==3){
+                                if (languageFlag == 0) {
+                                    $('.mask').show();
+                                    $('.title').html('驗證失敗');
+                                    $('.con').html('系統異常，請重新登錄');
+                                    $('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
+                                } else if (languageFlag == 1) {
+                                    $('.mask').show();
+                                    $('.title').html('验证失败');
+                                    $('.con').html('系统异常，请重新登陆');
+                                    $('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
+                                }
+                            }
+						}
 					});
 				}
 
