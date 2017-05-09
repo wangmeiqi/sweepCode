@@ -257,7 +257,7 @@ $(function () {
 		if (languageFlag == 0) {
 			$('.mask').show();
 			$('.title').html('溫馨提示');
-			$('.con').html('完成找回卡號後，請重新掃描書籤二維碼領取獎勵。');
+			$('.con').html('完成找回卡號後，請重新掃描卡片二維碼領取獎勵。');
 			$('.btn').html('找回卡號');
 			$('.btn').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/getMember?lang=big5'
@@ -265,7 +265,7 @@ $(function () {
 		} else if (languageFlag == 1) {
 			$('.mask').show();
 			$('.title').html('温馨提示');
-			$('.con').html('完成找回卡号后，请重新扫描书签二维码领取奖励。');
+			$('.con').html('完成找回卡号后，请重新扫描卡片二维码领取奖励。');
 			$('.btn').html('找回卡号');
 			$('.btn').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/getMember'
@@ -278,7 +278,7 @@ $(function () {
 		if (languageFlag == 0) {
 			$('.mask').show();
 			$('.title').html('溫馨提示');
-			$('.con').html('完成找回密碼后，請重新掃描書籤二維碼領取獎勵。');
+			$('.con').html('完成找回密碼后，請重新掃描卡片二維碼領取獎勵。');
 			$('.btn').html('找回密碼');
 			$('.btn').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/getPassword?lang=big5'
@@ -287,7 +287,7 @@ $(function () {
 			$('.forgetPassword').click(function () {
 				$('.mask').show();
 				$('.title').html('溫馨提示');
-				$('.con').html('完成找回密码后，请重新扫描书签二维码领取奖励。');
+				$('.con').html('完成找回密码后，请重新扫描卡片二维码领取奖励。');
 				$('.btn').html('找回密码');
 				$('.btn').on('click', function () {
 					window.location.href = 'http://ffp.hnair.com/FFPWap/member/getPassword'
@@ -301,7 +301,7 @@ $(function () {
 		if (languageFlag == 0) {
 			$('.mask').show();
 			$('.title').html('溫馨提示');
-			$('.con').html('完成註冊後，請重新掃描書籤二維碼領取獎勵。');
+			$('.con').html('完成註冊後，請重新掃描卡片二維碼領取獎勵。');
 			$('.btn').html('立即註冊');
 			$('.btn').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/registerConfirm?lang=big5'
@@ -309,7 +309,7 @@ $(function () {
 		} else if (languageFlag == 1) {
 			$('.mask').show();
 			$('.title').html('溫馨提示');
-			$('.con').html('完成注册后，请重新扫描书签二维码领取奖励。');
+			$('.con').html('完成注册后，请重新扫描卡片二维码领取奖励。');
 			$('.btn').html('立即注册');
 			$('.btn').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/registerConfirm'
