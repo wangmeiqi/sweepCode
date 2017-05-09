@@ -21,10 +21,11 @@ $(function () {
     });
     //简体语言
     $('.familiar').on('click', function () {
+        languageFlag = 1;//0代表中文繁體 1代表中文简体
         $(document.body).css('background', 'url(../../assets/hnsecret/img/bgj.jpg) no-repeat top  center');
         $(document.body).css('background-size', '100% auto');
         $(document.body).css('width', '100%');
-        languageFlag = 1;//0代表中文繁體 1代表中文简体
+        $('.mask').removeClass('maskE');
         $('.cardVerification').html('金鹏卡号验证');
         $('.cardPerson').html('会员登陆验证');
         $('.cardNum').attr('placeholder', '金鹏会员卡号');
@@ -44,6 +45,7 @@ $(function () {
     //繁体语言
     $('.complex').on('click', function () {
         languageFlag = 0;
+        $('.mask').removeClass('maskE');
         $(document.body).css('background', 'url(../../assets/hnsecret/img/bg.jpg) no-repeat top  center');
         $(document.body).css('background-size', '100% auto');
         $('.cardVerification').html('金鵬卡號驗證');
@@ -65,6 +67,7 @@ $(function () {
     //英文语言
     $('.english').on('click', function () {
         languageFlag = 2;
+        $('.mask').addClass('maskE');
         $(document.body).css('background', 'url(../../assets/hnsecret/img/bge.jpg) no-repeat top  center');
         $(document.body).css('background-size', '100% auto');
         $('.cardVerification').html('Card No.');
@@ -177,6 +180,14 @@ $(function () {
                                     $('.btn').click(function () {
                                         $('.mask').hide();
                                     });
+                                }else if(languageFlag==2){
+                                    $('.mask').show();
+                                    $('.title').html('Verification Failed');
+                                    $('.con').html('Wrong card number or last name, please check and enter again');
+                                    $('.btn').html('Got it');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
                                 }
                             } else if (data.tabNum == 3) {
                                 if (languageFlag == 0) {
@@ -192,6 +203,14 @@ $(function () {
                                     $('.title').html('验证失败');
                                     $('.con').html('系统异常，请重新登陆');
                                     $('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
+                                }else if(languageFlag==2){
+                                    $('.mask').show();
+                                    $('.title').html('Validation fails');
+                                    $('.con').html('A system exception, please login again');
+                                    $('.btn').html('Got it');
                                     $('.btn').click(function () {
                                         $('.mask').hide();
                                     });
@@ -259,6 +278,14 @@ $(function () {
                                     $('.btn').click(function () {
                                         $('.mask').hide();
                                     });
+                                }else if(languageFlag==2){
+                                    $('.mask').show();
+                                    $('.title').html('Verification Failed');
+                                    $('.con').html('Wrong user name or password, please check and enter again');
+                                    $('.btn').html('Got it');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
                                 }
                             } else if (data.tabNum == 3) {
                                 if (languageFlag == 0) {
@@ -274,6 +301,14 @@ $(function () {
                                     $('.title').html('验证失败');
                                     $('.con').html('系统异常，请重新登陆');
                                     $('.btn').html('知道了');
+                                    $('.btn').click(function () {
+                                        $('.mask').hide();
+                                    });
+                                }else if(languageFlag==2){
+                                    $('.mask').show();
+                                    $('.title').html('Validation fails');
+                                    $('.con').html('A system exception, please login again');
+                                    $('.btn').html('Got it');
                                     $('.btn').click(function () {
                                         $('.mask').hide();
                                     });
@@ -296,7 +331,8 @@ $(function () {
     });
 
     //弹窗
-    $('.mask').hide();
+    $('.mask').show();
+   // $('.mask').hide();
     $('.maskBtn').click(function () {
         $('.mask').hide();
     });
@@ -319,6 +355,14 @@ $(function () {
             $('.btn').on('click', function () {
                 window.location.href = 'http://ffp.hnair.com/FFPWap/member/getMember'
             })
+        }else if(languageFlag==2){
+            $('.mask').show();
+            $('.title').html('Friendly Reminders');
+            $('.con').html('After you have retrieved your card number, please scan the QR code again and collect your reward');
+            $('.btn').html('Retrieve Account Number');
+            $('.btn').on('click', function () {
+                window.location.href = 'http://ffp.hnair.com/FFPWap/member/getMember'
+            })
         }
 
     });
@@ -333,15 +377,21 @@ $(function () {
                 window.location.href = 'http://ffp.hnair.com/FFPWap/member/getPassword?lang=big5'
             })
         } else if (languageFlag == 1) {
-            $('.forgetPassword').click(function () {
-                $('.mask').show();
-                $('.title').html('溫馨提示');
-                $('.con').html('完成找回密码后，请重新扫描卡片上的二维码领取奖励。');
-                $('.btn').html('找回密码');
-                $('.btn').on('click', function () {
-                    window.location.href = 'http://ffp.hnair.com/FFPWap/member/getPassword'
-                })
-            });
+            $('.mask').show();
+            $('.title').html('溫馨提示');
+            $('.con').html('完成找回密码后，请重新扫描卡片上的二维码领取奖励。');
+            $('.btn').html('找回密码');
+            $('.btn').on('click', function () {
+                window.location.href = 'http://ffp.hnair.com/FFPWap/member/getPassword'
+            })
+        }else if(languageFlag==2){
+            $('.mask').show();
+            $('.title').html('Friendly Reminders');
+            $('.con').html('After you have retrieved your password, please scan the QR code again and collect your reward');
+            $('.btn').html('Reset Password');
+            $('.btn').on('click', function () {
+                window.location.href = 'http://ffp.hnair.com/FFPWap/member/getPassword'
+            })
         }
 
     });
@@ -360,6 +410,14 @@ $(function () {
             $('.title').html('溫馨提示');
             $('.con').html('完成注册后，请重新扫描卡片上的二维码领取奖励。');
             $('.btn').html('立即注册');
+            $('.btn').on('click', function () {
+                window.location.href = 'http://ffp.hnair.com/FFPWap/member/registerConfirm'
+            })
+        }else if(languageFlag==2){
+            $('.mask').show();
+            $('.title').html('Friendly Reminders');
+            $('.con').html('Please scan the QR code again and collect your reward after registration');
+            $('.btn').html('Register');
             $('.btn').on('click', function () {
                 window.location.href = 'http://ffp.hnair.com/FFPWap/member/registerConfirm'
             })
