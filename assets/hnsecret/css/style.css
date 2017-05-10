@@ -211,7 +211,7 @@ body {
 /* 英语控制 */
 .english .sign input {
     font-size: .2rem;
-    margin-top: .62rem;
+    margin-top: .64rem;
 }
 
 .english .sign i {
@@ -219,20 +219,19 @@ body {
 }
 
 .tab .english .name input {
-    margin-top: .39rem;
-}
-
-.tab .english .code input {
     margin-top: .41rem;
 }
 
+.tab .english .code input {
+    margin-top: .43rem;
+}
+
 .tab .english .password input {
-    margin-top: .39rem;
+    margin-top: .41rem;
 }
 
 .tab .english .sign {
     position: relative;
-
 }
 
 .tab .english .sign i {
