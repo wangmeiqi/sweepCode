@@ -76,9 +76,6 @@ $(function () {
         $('.cardVerification').html('Card No.');
         $('.cardPerson').html('Others');
         $('.cardNum').attr('placeholder', 'Fortune Wings Number');
-        //$('.sign>input').css('font-size', '.1rem');
-        //$('.sign>input').css('margin-top', '.62rem');
-        //$('.sign>i').css('font-size', '.1rem');
         $('.forgetCard').html('Forget card number?');
         $('.surname').attr('placeholder', 'Your Last Name');
         $('.sign>.name>input').css('margin-top', '.41rem');

@@ -188,11 +188,11 @@ body{
 
 /* 英语控制 */
 .english .sign input {
-    font-size: .09rem;
+    font-size: .2rem;
     margin-top: .62rem;
 }
 .english .sign i {
-    font-size: .09rem;
+    font-size: .1rem;
 }
 .tab .english .name input {
     margin-top: .39rem;
@@ -202,6 +202,14 @@ body{
 }
 .tab  .english .password input {
     margin-top: .39rem;
+}
+.tab .english .sign{
+    position: relative;
+
+}
+.tab .english .sign i{
+    position: absolute;
+    right: 0;
 }
 .sign i{
     float: right;
@@ -418,7 +426,7 @@ body{
     font-size: .33rem;
 }
 .getCode input.integralNumE{
-    font-size: .09rem;
+    font-size: .2rem;
     width: 86%;
     margin-top: .63rem;
 }
@@ -430,5 +438,8 @@ body{
 }
 .mask.maskE .toast{
     height: 3.7rem;
+}
+.mask.maskE .toast .btn{
+    font-size: .27rem;
 }
 
