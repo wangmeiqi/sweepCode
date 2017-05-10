@@ -118,9 +118,10 @@ $(function () {
                         //服务器报错
                         flag = false;
                         changeBtnStyle();
+                        showMask(lanType, alertMessage[4]);
                     }
                 });
             }
         }
-    })
+    });
 });

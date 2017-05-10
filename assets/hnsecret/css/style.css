@@ -215,7 +215,7 @@ body{
 }
 .tab .english .code .codeNum{
     position: absolute;
-    right: .15rem;
+    right: .17rem;
 }
 .sign i{
     float: right;
@@ -432,7 +432,7 @@ body{
     font-size: .33rem;
 }
 .getCode input.integralNumE{
-    font-size: .2rem;
+    font-size: .19rem;
     width: 86%;
     margin-top: .63rem;
 }

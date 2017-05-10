@@ -228,6 +228,31 @@ $(function () {
                             //服务器报错
                             flag = false;
                             changeBtnStyle();
+                            if (languageFlag == 0) {
+                                $('.mask').show();
+                                $('.title').html('驗證失敗');
+                                $('.con').html('系統異常，請重新登錄');
+                                $('.btn').html('知道了');
+                                $('.btn').click(function () {
+                                    $('.mask').hide();
+                                });
+                            } else if (languageFlag == 1) {
+                                $('.mask').show();
+                                $('.title').html('验证失败');
+                                $('.con').html('系统异常，请重新登陆');
+                                $('.btn').html('知道了');
+                                $('.btn').click(function () {
+                                    $('.mask').hide();
+                                });
+                            } else if (languageFlag == 2) {
+                                $('.mask').show();
+                                $('.title').html('Validation fails');
+                                $('.con').html('A system exception, please login again');
+                                $('.btn').html('Got it');
+                                $('.btn').click(function () {
+                                    $('.mask').hide();
+                                });
+                            }
                         }
 					});
 				}
@@ -247,7 +272,7 @@ $(function () {
 			}
 			if (verifyCode2.validate($('.codeInput2').val())) {
 				var ajaxData = {};
-				ajaxData.cardid = $('.cardNum').val();
+				ajaxData.cardid = $('.certificate').val();
 				ajaxData.pwd = $('.passwordNum').val();
 				if (flag === false) {
 					flag = true;
@@ -327,7 +352,37 @@ $(function () {
 							$('.surname').val('');
 							$('.codeInput2').val('');
 							verifyCode2.refresh();
-						}
+						},
+                        error:function () {
+                            //服务器报错
+                            flag = false;
+                            changeBtnStyle();
+                            if (languageFlag == 0) {
+                                $('.mask').show();
+                                $('.title').html('驗證失敗');
+                                $('.con').html('系統異常，請重新登錄');
+                                $('.btn').html('知道了');
+                                $('.btn').click(function () {
+                                    $('.mask').hide();
+                                });
+                            } else if (languageFlag == 1) {
+                                $('.mask').show();
+                                $('.title').html('验证失败');
+                                $('.con').html('系统异常，请重新登陆');
+                                $('.btn').html('知道了');
+                                $('.btn').click(function () {
+                                    $('.mask').hide();
+                                });
+                            } else if (languageFlag == 2) {
+                                $('.mask').show();
+                                $('.title').html('Validation fails');
+                                $('.con').html('A system exception, please login again');
+                                $('.btn').html('Got it');
+                                $('.btn').click(function () {
+                                    $('.mask').hide();
+                                });
+                            }
+                        }
 					});
 				}
 
