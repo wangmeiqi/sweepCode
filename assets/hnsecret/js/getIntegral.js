@@ -7,14 +7,6 @@ $(function () {
     $('.maskBtn').click(function () {
         $('.mask').hide();
     });
-    $('.btn').click(function () {
-        $('.mask').hide();
-        if($('.title').innerHTML=='领取成功'){
-            $('.successTab').show();
-        }
-
-    });
-
 
     /*   //切换语言版本
      var languageFlag = 0;//0代表中文繁體 1代表中文简体
@@ -117,13 +109,28 @@ $(function () {
                             //codeNum 出现其他情况
                         }
                         $('.integralNum').val('');
+                        if(data.codeNum == 0) {
+	                        $('.btn').off('click').on('click',function () {
+		                        $('.mask').hide();
+		                        $('.successTab').show();
+	                        });
+                        } else  {
+	                        $('.btn').off('click').on('click',function () {
+		                        $('.mask').hide();
+	                        });
+                        }
+
                     },
-                    error: function () {
-                        //服务器报错
-                        flag = false;
-                        changeBtnStyle();
-                        showMask(lanType, alertMessage[4]);
-                    }
+	                error: function () {
+		                //服务器报错
+		                flag = false;
+		                changeBtnStyle();
+		                $('.btn').off('click').on('click', function () {
+			                $('.mask').hide();
+		                });
+		                showMask(lanType, alertMessage[4]);
+
+	                }
                 });
             }
         }
