@@ -12,31 +12,31 @@ $(function () {
     });
 
 
- /*   //切换语言版本
-    var languageFlag = 0;//0代表中文繁體 1代表中文简体
-    var $languages = $('.language>a');
-    $languages.on('click', function () {
-        $(this).addClass('active').siblings().removeClass('active');
-    });
+    /*   //切换语言版本
+     var languageFlag = 0;//0代表中文繁體 1代表中文简体
+     var $languages = $('.language>a');
+     $languages.on('click', function () {
+     $(this).addClass('active').siblings().removeClass('active');
+     });
 
 
-    //简体语言
-    $('.familiar').on('click', function () {
-        languageFlag = 1;//1代表中文简体
-        $('.top').html('您已成功通过会员验证，快来领取666积分吧！');
-        $('.integralNum').attr('placeholder', '请输入卡片上的领取码');
-        $('.getCodeBtn').html('领取666积分');
-        $('.bottom').html('每个会员仅可领取一次 <br/> 2018年5月31日前扫码领取有效');
-    });
+     //简体语言
+     $('.familiar').on('click', function () {
+     languageFlag = 1;//1代表中文简体
+     $('.top').html('您已成功通过会员验证，快来领取666积分吧！');
+     $('.integralNum').attr('placeholder', '请输入卡片上的领取码');
+     $('.getCodeBtn').html('领取666积分');
+     $('.bottom').html('每个会员仅可领取一次 <br/> 2018年5月31日前扫码领取有效');
+     });
 
-    //繁体语言
-    $('.complex').on('click', function () {
-        languageFlag = 0;
-        $('.top').html('您已成功通過會員驗證，快來領取666積分吧！');
-        $('.integralNum').attr('placeholder', '請輸入卡片上的領取碼');
-        $('.getCodeBtn').html('領取666積分');
-        $('.bottom').html('每個會員僅可領取一次 <br/> 2018年5月31日前掃碼領取有效');
-    });*/
+     //繁体语言
+     $('.complex').on('click', function () {
+     languageFlag = 0;
+     $('.top').html('您已成功通過會員驗證，快來領取666積分吧！');
+     $('.integralNum').attr('placeholder', '請輸入卡片上的領取碼');
+     $('.getCodeBtn').html('領取666積分');
+     $('.bottom').html('每個會員僅可領取一次 <br/> 2018年5月31日前掃碼領取有效');
+     });*/
 
     //按钮请求
     var flag = false;
@@ -103,7 +103,7 @@ $(function () {
                     url: 'getPoints',
                     type: 'post',
                     data: ajaxData,
-                    dataType:'json',
+                    dataType: 'json',
                     success: function (data) {
                         flag = false;
                         changeBtnStyle();
@@ -114,7 +114,7 @@ $(function () {
                         }
                         $('.integralNum').val('');
                     },
-                    error:function () {
+                    error: function () {
                         //服务器报错
                         flag = false;
                         changeBtnStyle();

@@ -5,13 +5,16 @@ body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pr
     margin: 0;
     padding: 0;
 }
+
 html {
     font-size: 100px;
 }
+
 body {
     color: #000;
     font-family: "Microsoft YaHei", "Arial Black", Gadget, sans-serif;
 }
+
 a:link {
     color: #000;
     text-decoration: none;
@@ -63,7 +66,8 @@ input:focus {
     padding: 0;
     border: none;
 }
-i{
+
+i {
     font-style: normal;
 }
 
@@ -92,25 +96,28 @@ a {
 .clear {
     clear: both;
 }
-body{
-    width:100%;
-    background:url(../img/bg.jpg) no-repeat top  center;
-    background-size:100% auto;
-    overflow:auto;
+
+body {
+    width: 100%;
+    background: url(../img/bg.jpg) no-repeat top center;
+    background-size: 100% auto;
+    overflow: auto;
 }
 
-.language{
+.language {
     width: 100%;
     height: .59rem;
     line-height: .59rem;
-    background:rgba(0,0,0,.2) ;
+    background: rgba(0, 0, 0, .2);
 }
-.language a{
+
+.language a {
     float: right;
     color: #fff;
     font-size: .26rem;
 }
-.language a.one:after{
+
+.language a.one:after {
     content: '';
     display: inline-block;
     height: .28rem;
@@ -119,50 +126,60 @@ body{
     margin: 0 .1rem;
     vertical-align: -.05rem;
 }
-.language a:nth-child(1){
+
+.language a:nth-child(1) {
     margin-right: .28rem;
 }
-.language a.active{
+
+.language a.active {
     text-decoration: underline;
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 4rem;
     background: #fff;
-    background: rgba(255,255,255,0);
+    background: rgba(255, 255, 255, 0);
 }
-.tab{
+
+.tab {
     clear: both;
 }
-.tab .btnTab{
+
+.tab .btnTab {
     float: left;
     width: 50%;
     text-align: center;
     height: .51rem;
-    background: rgba(255,255,255,0);
+    background: rgba(255, 255, 255, 0);
     font-size: .26rem;
     color: #454e55;
     border-bottom: 1px solid #515a61;
 }
-.tab p.on{
+
+.tab p.on {
     height: .5rem;
     color: #e0514c;
     border-bottom: 2px solid #e0514c;
 }
-.tab div.content{
+
+.tab div.content {
     display: none;
 }
-.tab div.show{
+
+.tab div.show {
     display: block;
 }
-.tab .sign{
+
+.tab .sign {
     width: 75%;
     height: 1.14rem;
     /*line-height: .5rem;*/
     margin: 0 auto;
     border-bottom: 1px solid #ddd;
 }
-.tab .sign span.card{
+
+.tab .sign span.card {
     float: left;
     width: .32rem;
     height: .25rem;
@@ -170,10 +187,12 @@ body{
     background: url("../img/card.png") no-repeat;
     background-size: cover;
 }
-.tab .sign i{
-    margin-top:.64rem;
+
+.tab .sign i {
+    margin-top: .64rem;
 }
-.tab .sign span.Aa{
+
+.tab .sign span.Aa {
     float: left;
     width: .35rem;
     height: .23rem;
@@ -181,7 +200,8 @@ body{
     background: url("../img/Aa.png") no-repeat;
     background-size: cover;
 }
-.sign input{
+
+.sign input {
     float: left;
     width: 64%;
     margin-top: .57rem;
@@ -193,70 +213,85 @@ body{
     font-size: .2rem;
     margin-top: .62rem;
 }
+
 .english .sign i {
     font-size: .1rem;
 }
+
 .tab .english .name input {
     margin-top: .39rem;
 }
-.tab .english .code input{
+
+.tab .english .code input {
     margin-top: .41rem;
 }
-.tab  .english .password input {
+
+.tab .english .password input {
     margin-top: .39rem;
 }
-.tab .english .sign{
+
+.tab .english .sign {
     position: relative;
 
 }
-.tab .english .sign i{
+
+.tab .english .sign i {
     position: absolute;
     right: 0;
 }
-.tab .english .code .codeNum{
+
+.tab .english .code .codeNum {
     position: absolute;
     right: .17rem;
 }
-.sign i{
+
+.sign i {
     float: right;
     color: #e0514c;
     font-size: .22rem;
 }
-.tab .name{
+
+.tab .name {
     width: 75%;
     height: .9rem;
     line-height: .5rem;
     margin: 0 auto;
     border-bottom: 1px solid #ddd;
 }
-.tab .name input{
+
+.tab .name input {
     margin-top: .35rem;
 }
-.tab .password{
+
+.tab .password {
     width: 75%;
     height: .9rem;
     line-height: .5rem;
     margin: 0 auto;
     border-bottom: 1px solid #ddd;
 }
-.tab .password input{
+
+.tab .password input {
     margin-top: .35rem;
 }
-.tab .password i{
+
+.tab .password i {
     margin-top: .32rem;
 }
 
-.tab .code{
+.tab .code {
     width: 75%;
     height: .9rem;
     line-height: .5rem;
     margin: 0 auto;
     border-bottom: 1px solid #ddd;
 }
-.tab .code input{
+
+.tab .code input {
     margin-top: .38rem;
 }
-.tab .code .codeBg{
+
+.tab .code .codeBg {
     float: left;
     width: .28rem;
     height: .32rem;
@@ -264,16 +299,18 @@ body{
     background: url("../img/code.png") no-repeat;
     background-size: cover;
 }
-.tab .code .codeNum{
+
+.tab .code .codeNum {
     display: inline-block;
     width: .99rem;
     height: .37rem;
 }
-.tab .code .codeNum{
+
+.tab .code .codeNum {
     margin-top: .1rem;
 }
 
-.signInBtn{
+.signInBtn {
     height: .65rem;
     line-height: .65rem;
     width: 75%;
@@ -284,14 +321,16 @@ body{
     font-size: .29rem;
     text-align: center;
 }
-.signInBtn.english{
+
+.signInBtn.english {
     font-size: .27rem;
 }
 
 .signInBtn.active {
     background: #ccc;
 }
-.signUpBtn{
+
+.signUpBtn {
     height: .65rem;
     line-height: .65rem;
     width: 75%;
@@ -302,30 +341,33 @@ body{
     font-size: .29rem;
     text-align: center;
 }
-.signUpBtn.english{
+
+.signUpBtn.english {
     font-size: .27rem;
 }
-.bottom{
+
+.bottom {
     width: 75%;
     text-align: center;
     font-size: .24rem;
-    margin:.34rem auto 0;
+    margin: .34rem auto 0;
     color: #454d52;
 }
 
 /*弹框提示*/
-.mask{
+.mask {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.2);
+    background: rgba(0, 0, 0, .2);
     position: fixed;
     left: 0;
-    top:0;
+    top: 0;
     bottom: 0;
     right: 0;
     display: none;
 }
-.mask .toast{
+
+.mask .toast {
     width: 4.85rem;
     height: 2.7rem;
     background: #fff;
@@ -336,7 +378,8 @@ body{
     bottom: 0;
     margin: auto;
 }
-.mask .toast .title{
+
+.mask .toast .title {
     font-size: .3rem;
     color: #e0514c;
     padding-top: .34rem;
@@ -344,13 +387,15 @@ body{
     text-align: center;
     margin: 0 auto;
 }
-.mask .toast .con{
+
+.mask .toast .con {
     width: 90%;
     margin: .26rem auto 0;
     font-size: .22rem;
     color: #676767;
 }
-.mask .toast .btn{
+
+.mask .toast .btn {
     position: absolute;
     left: .95rem;
     bottom: .28rem;
@@ -365,31 +410,33 @@ body{
     line-height: .56rem;
 }
 
-.mask .toast em{
+.mask .toast em {
     position: absolute;
     top: .11rem;
     right: .13rem;
     width: .33rem;
     height: .33rem;
-    background: url("../img/concle.png") no-repeat ;
+    background: url("../img/concle.png") no-repeat;
     background-size: cover;
 }
 
 /*getIntegral*/
-.top{
+.top {
     width: 60%;
     font-size: .33rem;
     color: #e0514c;
     margin: 1rem auto 0;
     text-align: center;
 }
-.getCode{
+
+.getCode {
     width: 75%;
     height: 1.14rem;
     margin: 0 auto;
     border-bottom: 1px solid #ddd;
 }
-.getCode .lock{
+
+.getCode .lock {
     float: left;
     width: .32rem;
     height: .25rem;
@@ -397,13 +444,15 @@ body{
     background: url("../img/card.png") no-repeat;
     background-size: cover;
 }
-.getCode input{
+
+.getCode input {
     float: left;
     width: 66%;
     margin-top: .57rem;
     font-size: .26rem;
 }
-.getCodeBtn{
+
+.getCodeBtn {
     height: .65rem;
     line-height: .65rem;
     width: 75%;
@@ -414,7 +463,8 @@ body{
     font-size: .29rem;
     text-align: center;
 }
-.getCodeBtn.active{
+
+.getCodeBtn.active {
     height: .65rem;
     line-height: .65rem;
     width: 75%;
@@ -427,25 +477,30 @@ body{
 }
 
 /*英文版本样式*/
-.top.topE{
+.top.topE {
     width: 72%;
     font-size: .33rem;
 }
-.getCode input.integralNumE{
+
+.getCode input.integralNumE {
     font-size: .19rem;
     width: 86%;
     margin-top: .63rem;
 }
-.getCodeBtn.getCodeBtnE{
+
+.getCodeBtn.getCodeBtnE {
     font-size: .27rem;
 }
-.bottom.bottomE{
+
+.bottom.bottomE {
     font-size: .21rem;
 }
-.mask.maskE .toast{
+
+.mask.maskE .toast {
     height: 3.7rem;
 }
-.mask.maskE .toast .btn{
+
+.mask.maskE .toast .btn {
     font-size: .27rem;
 }
 
