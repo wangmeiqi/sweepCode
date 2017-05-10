@@ -213,6 +213,10 @@ body{
     position: absolute;
     right: 0;
 }
+.tab .english .code .codeNum{
+    position: absolute;
+    right: .15rem;
+}
 .sign i{
     float: right;
     color: #e0514c;

@@ -106,12 +106,18 @@ $(function () {
                     dataType:'json',
                     success: function (data) {
                         flag = false;
+                        changeBtnStyle();
                         if ([0, 1, 2, 3, 4].indexOf(data.codeNum) > -1) {
                             showMask(lanType, alertMessage[data.codeNum]);
                         } else {
                             //codeNum 出现其他情况
                         }
                         $('.integralNum').val('');
+                    },
+                    error:function () {
+                        //服务器报错
+                        flag = false;
+                        changeBtnStyle();
                     }
                 });
             }

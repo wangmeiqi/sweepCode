@@ -224,6 +224,11 @@ $(function () {
 							verifyCode1.refresh();
 
 						},
+                        error:function () {
+                            //服务器报错
+                            flag = false;
+                            changeBtnStyle();
+                        }
 					});
 				}
 
