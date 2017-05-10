@@ -170,52 +170,45 @@ $(function () {
 									$('.title').html('驗證失敗');
 									$('.con').html('您輸入的卡號或姓氏有誤，請核對後重新輸入。');
 									$('.btn').html('知道了');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
 								} else if (languageFlag == 1) {
 									$('.mask').show();
 									$('.title').html('验证失败');
 									$('.con').html('您输入的卡号或姓氏有误，请核对后重新输入。');
 									$('.btn').html('知道了');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								} else if (languageFlag == 2) {
 									$('.mask').show();
 									$('.title').html('Verification Failed');
 									$('.con').html('Wrong card number or last name, please check and enter again');
 									$('.btn').html('Got it');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								}
+								$('.btn').off('click').on('click', function () {
+									$('.mask').hide();
+								});
 							} else if (data.tabNum == 3) {
 								if (languageFlag == 0) {
 									$('.mask').show();
 									$('.title').html('驗證失敗');
 									$('.con').html('系統異常，請重新登錄');
 									$('.btn').html('知道了');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								} else if (languageFlag == 1) {
 									$('.mask').show();
 									$('.title').html('验证失败');
 									$('.con').html('系统异常，请重新登陆');
 									$('.btn').html('知道了');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								} else if (languageFlag == 2) {
 									$('.mask').show();
 									$('.title').html('Validation fails');
 									$('.con').html('A system exception, please login again');
 									$('.btn').html('Got it');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								}
+								$('.btn').off('click').on('click', function () {
+									$('.mask').hide();
+								});
 							}
 							//請求成功后 清空数据
 							$('.cardNum').val('');
@@ -224,36 +217,30 @@ $(function () {
 							verifyCode1.refresh();
 
 						},
-                        error:function () {
-                            //服务器报错
-                            flag = false;
-                            changeBtnStyle();
-                            if (languageFlag == 0) {
-                                $('.mask').show();
-                                $('.title').html('驗證失敗');
-                                $('.con').html('系統異常，請重新登錄');
-                                $('.btn').html('知道了');
-                                $('.btn').click(function () {
-                                    $('.mask').hide();
-                                });
-                            } else if (languageFlag == 1) {
-                                $('.mask').show();
-                                $('.title').html('验证失败');
-                                $('.con').html('系统异常，请重新登陆');
-                                $('.btn').html('知道了');
-                                $('.btn').click(function () {
-                                    $('.mask').hide();
-                                });
-                            } else if (languageFlag == 2) {
-                                $('.mask').show();
-                                $('.title').html('Validation fails');
-                                $('.con').html('A system exception, please login again');
-                                $('.btn').html('Got it');
-                                $('.btn').click(function () {
-                                    $('.mask').hide();
-                                });
-                            }
-                        }
+						error: function () {
+							//服务器报错
+							flag = false;
+							changeBtnStyle();
+							if (languageFlag == 0) {
+								$('.mask').show();
+								$('.title').html('驗證失敗');
+								$('.con').html('系統異常，請重新登錄');
+								$('.btn').html('知道了');
+							} else if (languageFlag == 1) {
+								$('.mask').show();
+								$('.title').html('验证失败');
+								$('.con').html('系统异常，请重新登陆');
+								$('.btn').html('知道了');
+							} else if (languageFlag == 2) {
+								$('.mask').show();
+								$('.title').html('Validation fails');
+								$('.con').html('A system exception, please login again');
+								$('.btn').html('Got it');
+							}
+							$('.btn').off('click').on('click', function () {
+								$('.mask').hide();
+							});
+						}
 					});
 				}
 
@@ -299,52 +286,45 @@ $(function () {
 									$('.title').html('驗證失敗');
 									$('.con').html('您輸入的用戶名或密碼有誤，請核對後重新輸入。');
 									$('.btn').html('知道了');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								} else if (languageFlag == 1) {
 									$('.mask').show();
 									$('.title').html('验证失败');
 									$('.con').html('您输入的用户名或密码有误，请核对后重新输入。');
 									$('.btn').html('知道了');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								} else if (languageFlag == 2) {
 									$('.mask').show();
 									$('.title').html('Verification Failed');
 									$('.con').html('Wrong user name or password, please check and enter again');
 									$('.btn').html('Got it');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								}
+								$('.btn').off('click').on('click', function () {
+									$('.mask').hide();
+								});
 							} else if (data.tabNum == 3) {
 								if (languageFlag == 0) {
 									$('.mask').show();
 									$('.title').html('驗證失敗');
 									$('.con').html('系統異常，請重新登錄');
 									$('.btn').html('知道了');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								} else if (languageFlag == 1) {
 									$('.mask').show();
 									$('.title').html('验证失败');
 									$('.con').html('系统异常，请重新登陆');
 									$('.btn').html('知道了');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
+
 								} else if (languageFlag == 2) {
 									$('.mask').show();
 									$('.title').html('Validation fails');
 									$('.con').html('A system exception, please login again');
 									$('.btn').html('Got it');
-									$('.btn').click(function () {
-										$('.mask').hide();
-									});
 								}
+								$('.btn').off('click').on('click', function () {
+									$('.mask').hide();
+								});
 							}
 
 							//請求成功后 清空数据
@@ -353,36 +333,33 @@ $(function () {
 							$('.codeInput2').val('');
 							verifyCode2.refresh();
 						},
-                        error:function () {
-                            //服务器报错
-                            flag = false;
-                            changeBtnStyle();
-                            if (languageFlag == 0) {
-                                $('.mask').show();
-                                $('.title').html('驗證失敗');
-                                $('.con').html('系統異常，請重新登錄');
-                                $('.btn').html('知道了');
-                                $('.btn').click(function () {
-                                    $('.mask').hide();
-                                });
-                            } else if (languageFlag == 1) {
-                                $('.mask').show();
-                                $('.title').html('验证失败');
-                                $('.con').html('系统异常，请重新登陆');
-                                $('.btn').html('知道了');
-                                $('.btn').click(function () {
-                                    $('.mask').hide();
-                                });
-                            } else if (languageFlag == 2) {
-                                $('.mask').show();
-                                $('.title').html('Validation fails');
-                                $('.con').html('A system exception, please login again');
-                                $('.btn').html('Got it');
-                                $('.btn').click(function () {
-                                    $('.mask').hide();
-                                });
-                            }
-                        }
+						error: function () {
+							//服务器报错
+							flag = false;
+							changeBtnStyle();
+							if (languageFlag == 0) {
+								$('.mask').show();
+								$('.title').html('驗證失敗');
+								$('.con').html('系統異常，請重新登錄');
+								$('.btn').html('知道了');
+
+							} else if (languageFlag == 1) {
+								$('.mask').show();
+								$('.title').html('验证失败');
+								$('.con').html('系统异常，请重新登陆');
+								$('.btn').html('知道了');
+
+							} else if (languageFlag == 2) {
+								$('.mask').show();
+								$('.title').html('Validation fails');
+								$('.con').html('A system exception, please login again');
+								$('.btn').html('Got it');
+
+							}
+							$('.btn').off('click').on('click', function () {
+								$('.mask').hide();
+							});
+						}
 					});
 				}
 
@@ -406,7 +383,10 @@ $(function () {
 			$('.title').html('溫馨提示');
 			$('.con').html('完成找回卡號後，請重新掃描卡片上的二維碼領取獎勵。');
 			$('.btn').html('找回卡號');
-			$('.btn').on('click', function () {
+			$('.btn').off('click').on('click', function () {
+				window.location.href = 'http://ffp.hnair.com/FFPWap/member/getMember?lang=big5'
+			})
+			$('.btn').off('click').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/getMember?lang=big5'
 			})
 		} else if (languageFlag == 1) {
@@ -414,7 +394,7 @@ $(function () {
 			$('.title').html('温馨提示');
 			$('.con').html('完成找回卡号后，请重新扫描卡片上的二维码领取奖励。');
 			$('.btn').html('找回卡号');
-			$('.btn').on('click', function () {
+			$('.btn').off('click').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/getMember'
 			})
 		} else if (languageFlag == 2) {
@@ -422,7 +402,7 @@ $(function () {
 			$('.title').html('Friendly Reminders');
 			$('.con').html('After you have retrieved your card number, please scan the QR code again and collect your reward');
 			$('.btn').html('Retrieve Account Number');
-			$('.btn').on('click', function () {
+			$('.btn').off('click').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPClub/member/getMember?lang=en'
 			})
 		}
@@ -435,7 +415,7 @@ $(function () {
 			$('.title').html('溫馨提示');
 			$('.con').html('完成找回密碼后，請重新掃描卡片上的二維碼領取獎勵。');
 			$('.btn').html('找回密碼');
-			$('.btn').on('click', function () {
+			$('.btn').off('click').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/getPassword?lang=big5'
 			})
 		} else if (languageFlag == 1) {
@@ -443,7 +423,7 @@ $(function () {
 			$('.title').html('溫馨提示');
 			$('.con').html('完成找回密码后，请重新扫描卡片上的二维码领取奖励。');
 			$('.btn').html('找回密码');
-			$('.btn').on('click', function () {
+			$('.btn').off('click').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/getPassword'
 			})
 		} else if (languageFlag == 2) {
@@ -451,7 +431,7 @@ $(function () {
 			$('.title').html('Friendly Reminders');
 			$('.con').html('After you have retrieved your password, please scan the QR code again and collect your reward');
 			$('.btn').html('Reset Password');
-			$('.btn').on('click', function () {
+			$('.btn').off('click').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPClub/member/getPassword?lang=en'
 			})
 		}
@@ -464,7 +444,7 @@ $(function () {
 			$('.title').html('溫馨提示');
 			$('.con').html('完成註冊後，請重新掃描卡片上的二維碼領取獎勵。');
 			$('.btn').html('立即註冊');
-			$('.btn').on('click', function () {
+			$('.btn').off('click').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/registerConfirm?lang=big5'
 			})
 		} else if (languageFlag == 1) {
@@ -472,7 +452,7 @@ $(function () {
 			$('.title').html('溫馨提示');
 			$('.con').html('完成注册后，请重新扫描卡片上的二维码领取奖励。');
 			$('.btn').html('立即注册');
-			$('.btn').on('click', function () {
+			$('.btn').off('click').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/registerConfirm'
 			})
 		} else if (languageFlag == 2) {
@@ -480,7 +460,7 @@ $(function () {
 			$('.title').html('Friendly Reminders');
 			$('.con').html('Please scan the QR code again and collect your reward after registration');
 			$('.btn').html('Register');
-			$('.btn').on('click', function () {
+			$('.btn').off('click').on('click', function () {
 				window.location.href = 'http://ffp.hnair.com/FFPWap/member/registerConfirm?lang=en&from=singlemessage&isappinstalled=0'
 			})
 		}
