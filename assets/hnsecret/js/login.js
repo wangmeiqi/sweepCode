@@ -266,7 +266,14 @@ $(function () {
             for (var i = 0; i < inputs.length; i++) {
                 var value2 = inputs.eq(i).val();
                 if (value2 == '') {
-                    alert('请输入' + inputs.eq(i).attr('placeholder'));
+                    if(languageFlag==0){
+                        alert('請輸入' + inputs.eq(i).attr('placeholder'));
+                    }else if(languageFlag==1){
+                        alert('请输入' + inputs.eq(i).attr('placeholder'));
+                    }else if(languageFlag==2){
+                        alert('please enter ' + inputs.eq(i).attr('placeholder'));
+                    }
+                   // alert('请输入' + inputs.eq(i).attr('placeholder'));
                     return false;
                 }
             }
