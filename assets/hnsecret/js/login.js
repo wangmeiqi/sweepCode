@@ -135,7 +135,13 @@ $(function () {
             for (var i = 0; i < $inputs.length; i++) {
                 var value = $inputs.eq(i).val();
                 if (value == '') {
-                    alert('请输入' + $inputs.eq(i).attr('placeholder'));
+                    if(languageFlag==0){
+                        alert('請輸入' + $inputs.eq(i).attr('placeholder'));
+                    }else if(languageFlag==1){
+                        alert('请输入' + $inputs.eq(i).attr('placeholder'));
+                    }else if(languageFlag==2){
+                        alert('please enter ' + $inputs.eq(i).attr('placeholder'));
+                    }
                     return false;
                 }
             }
@@ -245,7 +251,14 @@ $(function () {
                 }
 
             } else {
-                alert('验证码错误')
+                if(languageFlag==0){
+                    alert('驗證碼錯誤')
+                }else if(languageFlag==1){
+                    alert('验证码错误')
+                }else if(languageFlag==2){
+                    alert('Verify code entered is wrong')
+                }
+
             }
         } else {
             // 第二种
@@ -364,7 +377,13 @@ $(function () {
                 }
 
             } else {
-                alert('验证码错误')
+                if(languageFlag==0){
+                    alert('驗證碼錯誤')
+                }else if(languageFlag==1){
+                    alert('验证码错误')
+                }else if(languageFlag==2){
+                    alert('Verify code entered is wrong')
+                }
             }
         }
     });
