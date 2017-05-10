@@ -76,7 +76,7 @@ $(function () {
         $('.cardVerification').html('Card No.');
         $('.cardPerson').html('Others');
         $('.cardNum').attr('placeholder', 'Fortune Wings Number');
-        $('.forgetCard').html('Forget card number?');
+        $('.forgetCard').html('Forget?');
         $('.surname').attr('placeholder', 'Your Last Name');
         $('.sign>.name>input').css('margin-top', '.41rem');
         $('.codeInput1').attr('placeholder', 'Verification Code');
@@ -86,7 +86,7 @@ $(function () {
         $('.bottom').html('You can collect your reward after registration');
         $('.certificate').attr('placeholder', 'Email/Passport/Mobile No.');
         $('.passwordNum').attr('placeholder', 'Password');
-        $('.forgetPassword').html('Forgot password?');
+        $('.forgetPassword').html('Forget?');
 
     });
 
