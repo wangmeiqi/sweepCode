@@ -9,6 +9,10 @@ $(function () {
     });
     $('.btn').click(function () {
         $('.mask').hide();
+        if($('.title').innerHTML=='领取成功'){
+            $('.successTab').show();
+        }
+
     });
 
 

@@ -427,7 +427,7 @@ $(function () {
             $('.mask').show();
             $('.title').html('Friendly Reminders');
             $('.con').html('After you have retrieved your card number, please scan the QR code again and collect your reward');
-            $('.btn').html('Retrieve Account Number');
+            $('.btn').html('Retrieve Account');
             $('.btn').off('click').on('click', function () {
                 window.location.href = 'http://ffp.hnair.com/FFPClub/member/getMember?lang=en'
             })
