@@ -1,4 +1,6 @@
 /* CSS Document */
+@charset "utf-8";
+
 body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@ html {
 }
 body {
     color: #000;
-    font-family: "微软雅黑", "Arial Black", Gadget, sans-serif;
+    font-family: "Microsoft YaHei", "Arial Black", Gadget, sans-serif;
 }
 a:link {
     color: #000;
