@@ -172,6 +172,7 @@ body {
 }
 
 .tab .sign {
+    position: relative;
     width: 75%;
     height: 1.14rem;
     /*line-height: .5rem;*/
@@ -189,6 +190,8 @@ body {
 }
 
 .tab .sign i {
+    position: absolute;
+    right: 0;
     margin-top: .64rem;
 }
 
@@ -241,7 +244,7 @@ body {
 
 .tab .english .code .codeNum {
     position: absolute;
-    right: .17rem;
+    right: 0;
 }
 
 .sign i {
@@ -300,14 +303,14 @@ body {
 }
 
 .tab .code .codeNum {
+    position: absolute;
+    right: 0;
     display: inline-block;
     width: .99rem;
     height: .37rem;
-}
-
-.tab .code .codeNum {
     margin-top: .1rem;
 }
+
 
 .signInBtn {
     height: .65rem;
