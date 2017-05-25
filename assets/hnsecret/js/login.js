@@ -14,7 +14,7 @@ $(function () {
     //选项卡
     $.tab('#tab');
     //切换语言版本
-    var languageFlag = 0;//0代表中文繁體 1代表简体 2代表英文
+    //var languageFlag = 0;//0代表中文繁體 1代表简体 2代表英文
     var $languages = $('.language>a');
     $languages.on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
